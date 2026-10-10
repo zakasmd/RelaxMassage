@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="az" class="scroll-smooth overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Relax Massage & Spa at Parkway Inn | Premium Spa, Hovuz, Hamam & Masaj</title>
+    <meta name="description" content="Relax Massage & Spa at Parkway Inn - Bakıda lüks spa, hovuz, türk hamamı, sauna və masaj mərkəzi. İş saatları: 09:00 - 03:00. Tel: 0559738107">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#FAF4E3',
+                            300: '#E8D297',
+                            400: '#DFBE6B',
+                            500: '#D4AF37',
+                            600: '#B88E28',
+                            700: '#946E19',
+                        },
+                        dark: {
+                            900: '#0B0D10',
+                            800: '#12151B',
+                            700: '#1C2029',
+                            600: '#272C38',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark-900 text-gray-200 font-sans antialiased overflow-x-hidden max-w-full selection:bg-gold-500 selection:text-dark-900">
+
+    <!-- Header Navigation -->
+    <header id="header" class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-md border-b border-gold-500/10 transition-all duration-300 w-full overflow-x-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo -->
+                <a href="#hero" class="flex items-center gap-2.5 sm:gap-3 group">
+                    <div class="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border border-gold-500/40 p-1 bg-dark-800 group-hover:border-gold-400 transition duration-300 flex-shrink-0">
+                        <img src="images/logo.png" alt="Relax Massage & Spa Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif text-lg sm:text-2xl font-bold tracking-wider text-gold-400 group-hover:text-gold-300 transition leading-tight">RELAX</span>
+                        <span class="text-[9px] sm:text-xs tracking-widest text-gray-400 uppercase font-medium">Massage & Spa at Parkway Inn</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium tracking-wide">
+                    <a href="#hero" class="nav-link text-white hover:text-gold-400 transition py-1">Ana Səhifə</a>
+                    <a href="#haqqimizda" class="nav-link text-gray-300 hover:text-gold-400 transition py-1">Haqqımızda</a>
+                    <a href="#xidmetler" class="nav-link text-gray-300 hover:text-gold-400 transition py-1">Xidmətlərimiz</a>
+                    <a href="#serait" class="nav-link text-gray-300 hover:text-gold-400 transition py-1">Şəraitimiz</a>
+                    <a href="#qalereya" class="nav-link text-gray-300 hover:text-gold-400 transition py-1">Qalereya</a>
+                    <a href="#elaqe" class="nav-link text-gray-300 hover:text-gold-400 transition py-1">Əlaqə & Xəritə</a>
+                </nav>
+
+                <!-- Desktop Action CTA -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="tel:+994559738107" class="border border-gold-500/50 text-gold-400 hover:bg-gold-500 hover:text-dark-900 px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition duration-300 flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i> Zəng Edin
+                    </a>
+                    <a href="https://wa.me/994559738107" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition duration-300 flex items-center gap-2 shadow-lg shadow-emerald-900/30">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" class="text-gray-300 hover:text-gold-400 focus:outline-none p-2" aria-label="Menyu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-dark-800 border-b border-gold-500/20 px-4 pt-3 pb-6 space-y-3">
+            <a href="#hero" class="mobile-nav-link block px-3 py-2 text-base font-medium text-white hover:text-gold-400 rounded-md">Ana Səhifə</a>
+            <a href="#haqqimizda" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-300 hover:text-gold-400 rounded-md">Haqqımızda</a>
+            <a href="#xidmetler" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-300 hover:text-gold-400 rounded-md">Xidmətlərimiz</a>
+            <a href="#serait" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-300 hover:text-gold-400 rounded-md">Şəraitimiz</a>
+            <a href="#qalereya" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-300 hover:text-gold-400 rounded-md">Qalereya</a>
+            <a href="#elaqe" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-300 hover:text-gold-400 rounded-md">Əlaqə & Xəritə</a>
+            
+            <div class="pt-4 border-t border-gray-700/50 flex flex-col gap-2">
+                <a href="tel:+994559738107" class="w-full text-center border border-gold-500 text-gold-400 py-2.5 rounded-full text-sm font-semibold flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Zəng Edin: 055 973 81 07
+                </a>
+                <a href="https://wa.me/994559738107" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-emerald-600 text-white py-2.5 rounded-full text-sm font-semibold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp İlə Yazın
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION WITH REAL PHOTO SHOWCASE -->
+    <section id="hero" class="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-12 sm:py-16 bg-dark-900 w-full">
+        <!-- Subtle Overlay Glows -->
+        <div class="absolute top-0 left-0 w-72 h-72 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-72 h-72 bg-gold-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                
+                <!-- Hero Text Left -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs sm:text-sm font-medium tracking-widest uppercase mb-6 max-w-full">
+                        <i class="fa-solid fa-crown text-gold-400 text-xs flex-shrink-0"></i> Parkway Inn Otelində Lüks Spa Mərkəzi
+                    </div>
+
+                    <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
+                        Ruhunuz Və Bədəniniz Üçün <br>
+                        <span class="gold-gradient-text">Unudulmaz Spa & Masaj Lüksü</span>
+                    </h1>
+
+                    <p class="text-gray-300 text-sm sm:text-lg font-light leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Parkway Inn otelinin sakit və nəfis mühitində qapalı hovuz, Fin saunası, əsaslı Türk hamamı və peşəkar masaj seansları ilə tam yenilənin.
+                    </p>
+
+                    <!-- Feature pills -->
+                    <div class="flex flex-wrap justify-center lg:justify-start items-center gap-3 mb-8">
+                        <div class="bg-dark-800/90 border border-gold-500/30 px-4 py-2 rounded-full flex items-center gap-2.5 text-xs sm:text-sm text-gray-200">
+                            <i class="fa-solid fa-water-ladder text-gold-400"></i>
+                            <span>Hovuz, Hamam, Sauna & Masaj</span>
+                        </div>
+                        <div class="bg-dark-800/90 border border-gold-500/30 px-4 py-2 rounded-full flex items-center gap-2.5 text-xs sm:text-sm text-gray-200">
+                            <i class="fa-solid fa-hotel text-gold-400"></i>
+                            <span>Parkway Inn Baku</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 w-full">
+                        <a href="https://wa.me/994559738107" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-3.5 rounded-full text-sm sm:text-base tracking-wider transition duration-300 shadow-xl shadow-emerald-950/50 flex items-center justify-center gap-3 group">
+                            <i class="fa-brands fa-whatsapp text-xl group-hover:scale-110 transition"></i> WhatsApp ilə Yazın
+                        </a>
+                        <a href="tel:+994559738107" class="w-full sm:w-auto bg-gold-gradient hover:opacity-90 text-dark-900 font-bold px-8 py-3.5 rounded-full text-sm sm:text-base tracking-wider transition duration-300 shadow-xl shadow-gold-500/20 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-phone text-lg"></i> Zəng Edin: 055 973 81 07
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Photo Collage Right -->
+                <div class="lg:col-span-5 relative w-full mt-4 lg:mt-0">
+                    <div class="grid grid-cols-2 gap-3 relative z-10 w-full">
+                        <div class="space-y-3">
+                            <div class="rounded-2xl overflow-hidden border border-gold-500/30 shadow-2xl h-40 sm:h-48 group">
+                                <img src="images/Screenshot 2026-10-10 094217.png" alt="Qapalı Hovuz Zalı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            </div>
+                            <div class="rounded-2xl overflow-hidden border border-gold-500/30 shadow-2xl h-48 sm:h-60 group">
+                                <img src="images/Screenshot 2026-10-10 094249.png" alt="Cütlük Masaj Otağı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            </div>
+                        </div>
+                        <div class="space-y-3 pt-4 sm:pt-6">
+                            <div class="rounded-2xl overflow-hidden border border-gold-500/30 shadow-2xl h-48 sm:h-60 group">
+                                <img src="images/Screenshot 2026-10-10 094122.png" alt="Türk Hamamı Göbəktazı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            </div>
+                            <div class="rounded-2xl overflow-hidden border border-gold-500/30 shadow-2xl h-40 sm:h-48 group">
+                                <img src="images/Screenshot 2026-10-10 094115.png" alt="Fin Sauna Otağı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Center Logo Emblem Badge -->
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-gold-400 bg-dark-900/90 p-2 shadow-2xl flex items-center justify-center backdrop-blur-md">
+                        <img src="images/logo.png" alt="Relax Spa Logo" class="w-full h-full object-contain">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION SEPARATOR ORNAMENT -->
+    <div class="flex items-center justify-center my-4 opacity-40 px-4">
+        <div class="h-px bg-gradient-to-r from-transparent via-gold-500 to-transparent w-full max-w-xs"></div>
+        <div class="mx-3 text-gold-400 flex-shrink-0"><i class="fa-solid fa-spa text-sm"></i></div>
+        <div class="h-px bg-gradient-to-r from-transparent via-gold-500 to-transparent w-full max-w-xs"></div>
+    </div>
+
+    <!-- HAQQIMIZDA SECTION -->
+    <section id="haqqimizda" class="py-16 sm:py-24 bg-dark-800/50 relative w-full overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Real Photo Showcase -->
+                <div class="relative w-full">
+                    <div class="grid grid-cols-2 gap-3 sm:gap-4">
+                        <div class="rounded-2xl overflow-hidden border border-gold-500/30 shadow-xl h-56 sm:h-72">
+                            <img src="images/Screenshot 2026-10-10 094145.png" alt="Relaks Masaj Otağı" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-2xl overflow-hidden border border-gold-500/30 shadow-xl h-56 sm:h-72 mt-6 sm:mt-8">
+                            <img src="images/Screenshot 2026-10-10 094132.png" alt="Spa Dəhliz Və Vitrajlar" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative Golden Card overlay -->
+                    <div class="mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:left-6 sm:right-6 bg-dark-900/95 border border-gold-500/40 p-4 rounded-xl shadow-2xl backdrop-blur-md flex items-center gap-3 sm:gap-4">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-gold-400 bg-gold-500/10 flex items-center justify-center text-gold-400 flex-shrink-0">
+                            <i class="fa-solid fa-hotel text-lg sm:text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif text-base sm:text-lg font-bold text-white">Parkway Inn Eksklüziv Spa</h4>
+                            <p class="text-[11px] sm:text-xs text-gray-300">Yüksək təmizlik, rahatlıq və geniş imkanlar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content Text -->
+                <div>
+                    <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-3">
+                        <i class="fa-solid fa-leaf"></i> Bizim Haqımızda
+                    </div>
+                    
+                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                        Parkway Inn-də <br>
+                        <span class="gold-gradient-text">Həqiqi Spa & Masaj İncəliyi</span>
+                    </h2>
+
+                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-6 font-light">
+                        <strong>Relax Massage & Spa at Parkway Inn</strong> olaraq qonaqlarımıza unudulmaz istirahət və bədən baxımı təcrübəsi bəxş edirik. Mərkəzimiz zəngin imkanları ilə seçilir: geniş qapalı hovuz, ənənəvi mərmər Türk hamamı, Fin saunası, mozaik duş kabinələri və xüsusi dizayn edilmiş VIP masaj otaqları.
+                    </p>
+
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed mb-8">
+                        Bütün procedurlarımız 100% gigiyenik qaydalara riayət olunmaqla peşəkar masaj terapevtlerimizin nəzarəti altında həyata keçirilir. Hər gün 09:00-dan gecə saat 03:00-dək xidmətinizdəyik.
+                    </p>
+
+                    <!-- Feature Badges Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-8">
+                        <div class="flex items-center gap-3 p-3.5 rounded-xl bg-dark-900/60 border border-gold-500/20">
+                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold-500/10 flex items-center justify-center text-gold-400 flex-shrink-0">
+                                <i class="fa-solid fa-water-ladder"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Qapalı Hovuz</h4>
+                                <p class="text-xs text-gray-400">Təmiz və sakit hovuz</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3.5 rounded-xl bg-dark-900/60 border border-gold-500/20">
+                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold-500/10 flex items-center justify-center text-gold-400 flex-shrink-0">
+                                <i class="fa-solid fa-hot-tub-person"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Türk Hamamı & Sauna</h4>
+                                <p class="text-xs text-gray-400">Ənənəvi mərmər hamam</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3.5 rounded-xl bg-dark-900/60 border border-gold-500/20">
+                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold-500/10 flex items-center justify-center text-gold-400 flex-shrink-0">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Peşəkar Terapevtler</h4>
+                                <p class="text-xs text-gray-400">Fərdi masaj seansları</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3.5 rounded-xl bg-dark-900/60 border border-gold-500/20">
+                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold-500/10 flex items-center justify-center text-gold-400 flex-shrink-0">
+                                <i class="fa-solid fa-moon"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Gecə 03:00-dək</h4>
+                                <p class="text-xs text-gray-400">Geç saatlarda rahat istirahət</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/994559738107" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 text-gold-400 hover:text-gold-300 text-sm font-semibold tracking-wider group">
+                        <span>WhatsApp ilə Əlaqə Saxlayın</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ŞƏRAİTİMİZ (FACILITIES SHOWCASE SECTION) -->
+    <section id="serait" class="py-16 sm:py-24 bg-dark-900 relative w-full overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+                <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-3">
+                    <i class="fa-solid fa-gem"></i> Bizim Məkan Və Şəraitimiz
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">
+                    Lüks Spa Mərkəzimizin Zalları
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base font-light">
+                    Parkway Inn mərkəzində yerləşən bütün istirahət və spa zallarımızın real fotoşəkilləri.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Facility 1: Pool -->
+                <div class="bg-dark-800 border border-gold-500/20 rounded-2xl overflow-hidden group hover:border-gold-400 transition duration-300">
+                    <div class="h-48 sm:h-56 overflow-hidden relative">
+                        <img src="images/Screenshot 2026-10-10 094217.png" alt="Qapalı Hovuz Zalı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 bg-dark-900/90 text-gold-400 text-xs px-3 py-1 rounded-full border border-gold-500/30">Qapalı Hovuz</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif text-xl font-bold text-white mb-2">Qapalı Hovuz Zalı</h3>
+                        <p class="text-xs text-gray-400 font-light leading-relaxed">
+                            Suyun hərarətinə riayət olunan geniş hovuz və uzanmaq üçün rahat şezlonqlar.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Facility 2: Hamam -->
+                <div class="bg-dark-800 border border-gold-500/20 rounded-2xl overflow-hidden group hover:border-gold-400 transition duration-300">
+                    <div class="h-48 sm:h-56 overflow-hidden relative">
+                        <img src="images/Screenshot 2026-10-10 094122.png" alt="Türk Hamamı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 bg-dark-900/90 text-gold-400 text-xs px-3 py-1 rounded-full border border-gold-500/30">Türk Hamamı</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif text-xl font-bold text-white mb-2">Ənənəvi Türk Hamamı</h3>
+                        <p class="text-xs text-gray-400 font-light leading-relaxed">
+                            Mozaik bəzəkli mərmər göbəktazı, isti kurnalar və təbii köpük masajı.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Facility 3: Sauna -->
+                <div class="bg-dark-800 border border-gold-500/20 rounded-2xl overflow-hidden group hover:border-gold-400 transition duration-300">
+                    <div class="h-48 sm:h-56 overflow-hidden relative">
+                        <img src="images/Screenshot 2026-10-10 094115.png" alt="Fin Saunası" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 bg-dark-900/90 text-gold-400 text-xs px-3 py-1 rounded-full border border-gold-500/30">Fin Saunası</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif text-xl font-bold text-white mb-2">Taxta Fin Saunası</h3>
+                        <p class="text-xs text-gray-400 font-light leading-relaxed">
+                            Toksinləri kənarlaşdıran və bədən gərginliyini azaldan orijinal taxta buxar saunası.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Facility 4: Showers -->
+                <div class="bg-dark-800 border border-gold-500/20 rounded-2xl overflow-hidden group hover:border-gold-400 transition duration-300">
+                    <div class="h-48 sm:h-56 overflow-hidden relative">
+                        <img src="images/Screenshot 2026-10-10 094138.png" alt="Mozaik Duş Zalları" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 bg-dark-900/90 text-gold-400 text-xs px-3 py-1 rounded-full border border-gold-500/30">Duş Kabinələri</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif text-xl font-bold text-white mb-2">Mozaik Duş Zalları</h3>
+                        <p class="text-xs text-gray-400 font-light leading-relaxed">
+                            Steril və komfortlu mozaik çinili rain-shower duş sistemləri.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- XİDMƏTLƏRİMİZ SECTION WITH REAL IMAGES -->
+    <section id="xidmetler" class="py-16 sm:py-24 bg-dark-800/40 relative w-full overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+                <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-3">
+                    <i class="fa-solid fa-sparkles"></i> Masaj Növləri & Spa Xidmətləri
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">
+                    Eksklüziv Masaj Və Spa Proqramlarımız
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base font-light">
+                    Sizin rahatlığınız üçün xüsusi otaqlarımızda peşəkar masaj xidmətləri.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                
+                <!-- Service Card 1: Köpük Masajı -->
+                <div class="service-card group bg-dark-800 border border-gold-500/20 hover:border-gold-500/60 rounded-2xl overflow-hidden transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 sm:h-48 overflow-hidden relative">
+                            <img src="images/Screenshot 2026-10-10 094151.png" alt="Türk Hamamında Köpük Masajı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-800 via-transparent to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-gold-500 text-dark-900 font-bold text-[10px] uppercase px-2.5 py-1 rounded-full">Ən Populyar</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl font-bold text-white mb-3 group-hover:text-gold-400 transition">Türk Hamamı Və Köpük Masajı</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-4 font-light">
+                                İsti mərmər üzərində kisə və təbii köpük ilə bədənin ölü hüceyrələrdən təmizlənməsi və tam relaksasiya.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-gray-700/50 flex items-center justify-between mt-auto">
+                        <span class="text-xs text-gray-400 font-medium"><i class="fa-solid fa-hot-tub-person text-gold-400 mr-1"></i> Hamam & Köpük</span>
+                        <a href="https://wa.me/994559738107?text=Salam,%20Turk%20Hamami%20ve%20Kopuk%20Masaji%20haqqinda%20melumat%20almaq%20isterdim" target="_blank" rel="noopener noreferrer" class="bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white px-4 py-2 rounded-full text-xs font-semibold transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp"></i> Bron Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 2: Couples Massage -->
+                <div class="service-card group bg-dark-800 border border-gold-500/20 hover:border-gold-500/60 rounded-2xl overflow-hidden transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 sm:h-48 overflow-hidden relative">
+                            <img src="images/Screenshot 2026-10-10 094249.png" alt="Cütlük Masajı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-800 via-transparent to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-gold-500 text-dark-900 font-bold text-[10px] uppercase px-2.5 py-1 rounded-full">Cütlüklər Üçün</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl font-bold text-white mb-3 group-hover:text-gold-400 transition">VIP Cütlük (Couples) Spa</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-4 font-light">
+                                İkili nəfis masaj otağımızda şam işığı və sakitləşdirici musiqi altında iki nəfərlik xüsusi relaksasiya seansı.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-gray-700/50 flex items-center justify-between mt-auto">
+                        <span class="text-xs text-gray-400 font-medium"><i class="fa-solid fa-heart text-gold-400 mr-1"></i> İkili Otaq</span>
+                        <a href="https://wa.me/994559738107?text=Salam,%20Cutluk%20Spa%20masaji%20haqqinda%20melumat%20almaq%20isterdim" target="_blank" rel="noopener noreferrer" class="bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white px-4 py-2 rounded-full text-xs font-semibold transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp"></i> Bron Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 3: VIP Otaqda Klassik Masaj -->
+                <div class="service-card group bg-dark-800 border border-gold-500/20 hover:border-gold-500/60 rounded-2xl overflow-hidden transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 sm:h-48 overflow-hidden relative">
+                            <img src="images/Screenshot 2026-10-10 094211.png" alt="VIP Masaj Otağı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-800 via-transparent to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-gold-500 text-dark-900 font-bold text-[10px] uppercase px-2.5 py-1 rounded-full">VIP Xidmət</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl font-bold text-white mb-3 group-hover:text-gold-400 transition">VIP Klassik Bədən Masajı</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-4 font-light">
+                                Şəxsi soyunub-geyinmə dolabları və xüsusi masaj çarpayısı olan lüks VIP otaqda tam bədən İsveç masajı.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-gray-700/50 flex items-center justify-between mt-auto">
+                        <span class="text-xs text-gray-400 font-medium"><i class="fa-solid fa-crown text-gold-400 mr-1"></i> VIP Məhrəmilik</span>
+                        <a href="https://wa.me/994559738107?text=Salam,%20VIP%20Klassik%20Masaj%20haqqinda%20melumat%20almaq%20isterdim" target="_blank" rel="noopener noreferrer" class="bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white px-4 py-2 rounded-full text-xs font-semibold transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp"></i> Bron Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 4: Aromaterapiya -->
+                <div class="service-card group bg-dark-800 border border-gold-500/20 hover:border-gold-500/60 rounded-2xl overflow-hidden transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 sm:h-48 overflow-hidden relative">
+                            <img src="images/Screenshot 2026-10-10 094300.png" alt="Aromaterapiya Və Yağlar" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-800 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl font-bold text-white mb-3 group-hover:text-gold-400 transition">Aromaterapiya & Yağ Masajı</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-4 font-light">
+                                Xüsusi seçilmiş efir yağları, xoş qoxular və sakitləşdirici masaj hərəkətləri ilə stessin aradan qaldırılması.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-gray-700/50 flex items-center justify-between mt-auto">
+                        <span class="text-xs text-gray-400 font-medium"><i class="fa-solid fa-droplet text-gold-400 mr-1"></i> Təbii Yağlar</span>
+                        <a href="https://wa.me/994559738107?text=Salam,%20Aromaterapiya%20masaji%20haqqinda%20melumat%20almaq%20isterdim" target="_blank" rel="noopener noreferrer" class="bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white px-4 py-2 rounded-full text-xs font-semibold transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp"></i> Bron Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 5: Müalicəvi Dərin Əzələ -->
+                <div class="service-card group bg-dark-800 border border-gold-500/20 hover:border-gold-500/60 rounded-2xl overflow-hidden transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 sm:h-48 overflow-hidden relative">
+                            <img src="images/Screenshot 2026-10-10 094312.png" alt="Müalicəvi Dərin Əzələ Masajı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-800 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl font-bold text-white mb-3 group-hover:text-gold-400 transition">Dərin Əzələ & Müalicəvi</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-4 font-light">
+                                Bel, boyun və çiyin ağrılarının, əzələ düyünlərinin açılması üçün peşəkar bərpaedici masaj.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-gray-700/50 flex items-center justify-between mt-auto">
+                        <span class="text-xs text-gray-400 font-medium"><i class="fa-solid fa-heart-pulse text-gold-400 mr-1"></i> Bərpaedici</span>
+                        <a href="https://wa.me/994559738107?text=Salam,%20Derin%20Ezele%20ve%20Mualicevi%20masaj%20haqqinda%20melumat%20almaq%20isterdim" target="_blank" rel="noopener noreferrer" class="bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white px-4 py-2 rounded-full text-xs font-semibold transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp"></i> Bron Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 6: VIP Kompleks Spa -->
+                <div class="service-card group bg-gradient-to-b from-dark-800 via-dark-800 to-gold-950/20 border border-gold-500/40 hover:border-gold-400 rounded-2xl overflow-hidden transition duration-300 flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="h-44 sm:h-48 overflow-hidden relative">
+                            <img src="images/Screenshot 2026-10-10 094132.png" alt="VIP Kompleks Spa Paket" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-800 via-transparent to-transparent"></div>
+                            <span class="absolute top-3 right-3 bg-gold-500 text-dark-900 text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-full">Eksklüziv</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl font-bold text-white mb-3 group-hover:text-gold-400 transition">VIP Full Spa Relaxation</h3>
+                            <p class="text-gray-300 text-sm leading-relaxed mb-4 font-light">
+                                Hovuz, Türk hamamı köpük seansı, Fin saunası və tam bədən relaks masajından ibarət eksklüziv kompleks gün.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-gold-500/30 flex items-center justify-between mt-auto">
+                        <span class="text-xs text-gold-400 font-semibold"><i class="fa-solid fa-star mr-1"></i> VIP Kompleks</span>
+                        <a href="https://wa.me/994559738107?text=Salam,%20VIP%20Full%20Spa%20Paketi%20haqqinda%20melumat%20almaq%20isterdim" target="_blank" rel="noopener noreferrer" class="bg-gold-500 text-dark-900 hover:bg-gold-400 font-bold px-4 py-2 rounded-full text-xs transition flex items-center gap-1.5 shadow-lg shadow-gold-500/20">
+                            <i class="fa-brands fa-whatsapp"></i> Əlaqə
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- QALEREYA SECTION (INTERACTIVE PHOTO GALLERY & LIGHTBOX) -->
+    <section id="qalereya" class="py-16 sm:py-24 bg-dark-900 relative w-full overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+                <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-3">
+                    <i class="fa-solid fa-camera"></i> Foto Qalereya
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">
+                    Spa Mərkəzimizdən Görüntülər
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base font-light">
+                    Hər bir şəklə klikləyərək tam ölçüdə baxa bilərsiniz.
+                </p>
+            </div>
+
+            <!-- Gallery Grid (All 11 Real Images) -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+                
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item group relative h-48 sm:h-64 rounded-2xl overflow-hidden cursor-pointer border border-gold-500/20 hover:border-gold-400 transition duration-300" data-img="images/Screenshot 2026-10-10 094217.png" data-caption="Qapalı Hovuz Zalı">
+                    <img src="images/Screenshot 2026-10-10 094217.png" alt="Qapalı Hovuz Zalı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-3 sm:p-4">
+                        <span class="text-gold-400 text-[10px] sm:text-xs font-semibold">Parkway Inn Spa</span>
+                        <h4 class="text-white font-serif text-sm sm:text-lg font-bold">Qapalı Hovuz Zalı</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item group relative h-48 sm:h-64 rounded-2xl overflow-hidden cursor-pointer border border-gold-500/20 hover:border-gold-400 transition duration-300" data-img="images/Screenshot 2026-10-10 094122.png" data-caption="Türk Hamamı Göbəktazı">
+                    <img src="images/Screenshot 2026-10-10 094122.png" alt="Türk Hamamı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-3 sm:p-4">
+                        <span class="text-gold-400 text-[10px] sm:text-xs font-semibold">Ənənəvi Hamam</span>
+                        <h4 class="text-white font-serif text-sm sm:text-lg font-bold">Türk Hamamı & Kurnalar</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item group relative h-48 sm:h-64 rounded-2xl overflow-hidden cursor-pointer border border-gold-500/20 hover:border-gold-400 transition duration-300" data-img="images/Screenshot 2026-10-10 094115.png" data-caption="Fin Saunası">
+                    <img src="images/Screenshot 2026-10-10 094115.png" alt="Fin Saunası" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-3 sm:p-4">
+                        <span class="text-gold-400 text-[10px] sm:text-xs font-semibold">Sauna</span>
+                        <h4 class="text-white font-serif text-sm sm:text-lg font-bold">Fin Saunası Və Taşlar</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item group relative h-48 sm:h-64 rounded-2xl overflow-hidden cursor-pointer border border-gold-500/20 hover:border-gold-400 transition duration-300" data-img="images/Screenshot 2026-10-10 094151.png" data-caption="Köpük Masajı Seansı">
+                    <img src="images/Screenshot 2026-10-10 094151.png" alt="Köpük Masajı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-3 sm:p-4">
+                        <span class="text-gold-400 text-[10px] sm:text-xs font-semibold">Hamam Seansı</span>
+                        <h4 class="text-white font-serif text-sm sm:text-lg font-bold">Təbii Köpük Masajı</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item group relative h-48 sm:h-64 rounded-2xl overflow-hidden cursor-pointer border border-gold-500/20 hover:border-gold-400 transition duration-300" data-img="images/Screenshot 2026-10-10 094249.png" data-caption="VIP Cütlük Masaj Otağı">
+                    <img src="images/Screenshot 2026-10-10 094249.png" alt="Cütlük Masaj Otağı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-3 sm:p-4">
+                        <span class="text-gold-400 text-[10px] sm:text-xs font-semibold">İkili Otaq</span>
+                        <h4 class="text-white font-serif text-sm sm:text-lg font-bold">Cütlüklər Üçün Spa Suite</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item group relative h-48 sm:h-64 rounded-2xl overflow-hidden cursor-pointer border border-gold-500/20 hover:border-gold-400 transition duration-300" data-img="images/Screenshot 2026-10-10 094211.png" data-caption="VIP Masaj Otağı Və Dolablar">
+                    <img src="images/Screenshot 2026-10-10 094211.png" alt="VIP Masaj Otağı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-3 sm:p-4">
+                        <span class="text-gold-400 text-[10px] sm:text-xs font-semibold">VIP Suite</span>
+                        <h4 class="text-white font-serif text-sm sm:text-lg font-bold">Şəxsi Masaj Otağı</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item group relative h-48 sm:h-64 rounded-2xl overflow-hidden cursor-pointer border border-gold-500/20 hover:border-gold-400 transition duration-300" data-img="images/Screenshot 2026-10-10 094300.png" data-caption="Aromaterapiya Və Qulluq Otağı">
+                    <img src="images/Screenshot 2026-10-10 094300.png" alt="Aromaterapiya Otağı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-3 sm:p-4">
+                        <span class="text-gold-400 text-[10px] sm:text-xs font-semibold">Relaksasiya</span>
+                        <h4 class="text-white font-serif text-sm sm:text-lg font-bold">Yağ Masajı Otağı</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item group relative h-48 sm:h-64 rounded-2xl overflow-hidden cursor-pointer border border-gold-500/20 hover:border-gold-400 transition duration-300" data-img="images/Screenshot 2026-10-10 094312.png" data-caption="İkili Masaj Zalı">
+                    <img src="images/Screenshot 2026-10-10 094312.png" alt="İkili Masaj Zalı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-3 sm:p-4">
+                        <span class="text-gold-400 text-[10px] sm:text-xs font-semibold">Geniş Otaqlar</span>
+                        <h4 class="text-white font-serif text-sm sm:text-lg font-bold">İkili Masaj Zalı</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item group relative h-48 sm:h-64 rounded-2xl overflow-hidden cursor-pointer border border-gold-500/20 hover:border-gold-400 transition duration-300" data-img="images/Screenshot 2026-10-10 094145.png" data-caption="Zərif Dizaynlı Masaj Otağı">
+                    <img src="images/Screenshot 2026-10-10 094145.png" alt="Masaj Otağı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-3 sm:p-4">
+                        <span class="text-gold-400 text-[10px] sm:text-xs font-semibold">Komfort</span>
+                        <h4 class="text-white font-serif text-sm sm:text-lg font-bold">İnteryer Və Dizayn</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 10 -->
+                <div class="gallery-item group relative h-48 sm:h-64 rounded-2xl overflow-hidden cursor-pointer border border-gold-500/20 hover:border-gold-400 transition duration-300" data-img="images/Screenshot 2026-10-10 094138.png" data-caption="Mozaik Duş Kabinəsi">
+                    <img src="images/Screenshot 2026-10-10 094138.png" alt="Mozaik Duş Kabinəsi" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-3 sm:p-4">
+                        <span class="text-gold-400 text-[10px] sm:text-xs font-semibold">Gigiyena</span>
+                        <h4 class="text-white font-serif text-sm sm:text-lg font-bold">Mozaik Duş Zalları</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 11 -->
+                <div class="gallery-item group relative h-48 sm:h-64 rounded-2xl overflow-hidden cursor-pointer border border-gold-500/20 hover:border-gold-400 transition duration-300" data-img="images/Screenshot 2026-10-10 094132.png" data-caption="Spa Dəhlizi Və İncəsənət Vitrajları">
+                    <img src="images/Screenshot 2026-10-10 094132.png" alt="Spa Dəhliz Və Vitraj" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-3 sm:p-4">
+                        <span class="text-gold-400 text-[10px] sm:text-xs font-semibold">Atmosfer</span>
+                        <h4 class="text-white font-serif text-sm sm:text-lg font-bold">Vitraj Dəhliz Və İncəsənət</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CALL TO ACTION -->
+    <section class="py-12 sm:py-16 bg-gradient-to-r from-dark-900 via-dark-800 to-dark-900 border-y border-gold-500/20 relative overflow-hidden w-full">
+        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+            <h3 class="font-serif text-2xl sm:text-4xl font-bold text-white mb-4">
+                Özünüzə Və Bədəninizə Lüks Bir Hədiyyə Edin
+            </h3>
+            <p class="text-gray-300 text-sm sm:text-base mb-8 max-w-xl mx-auto font-light">
+                Hər hansı sualınız var və ya masaj seansı təyin etmək istəyirsiniz? WhatsApp və ya zəng vasitəsilə dərhal əlaqə saxlayın.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
+                <a href="tel:+994559738107" class="bg-gold-500 hover:bg-gold-400 text-dark-900 font-bold px-8 py-3.5 rounded-full text-sm transition flex items-center justify-center gap-2 shadow-lg shadow-gold-500/20">
+                    <i class="fa-solid fa-phone"></i> Zəng Edin: 055 973 81 07
+                </a>
+                <a href="https://wa.me/994559738107" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-3.5 rounded-full text-sm transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-900/30">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Meneceri
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ƏLAQƏ & XƏRİTƏ SECTION -->
+    <section id="elaqe" class="py-16 sm:py-24 bg-dark-900 relative w-full overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+                <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-3">
+                    <i class="fa-solid fa-map-location-dot"></i> Ünvan Və Əlaqə
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">
+                    Bizim Məkan Və Əlaqə Vasitələri
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base font-light">
+                    Sizi Parkway Inn otelində yerləşən spa mərkəzimizdə görməkdən məmnun olarıq.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                
+                <!-- Contact Information Card -->
+                <div class="bg-dark-800 border border-gold-500/20 rounded-2xl p-6 sm:p-8 space-y-6 lg:col-span-1 w-full">
+                    
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider block">Əlaqə Nömrəsi</span>
+                            <a href="tel:+994559738107" class="text-lg font-bold text-white hover:text-gold-400 transition">055 973 81 07</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl flex-shrink-0">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider block">WhatsApp Şəbəkəsi</span>
+                            <a href="https://wa.me/994559738107" target="_blank" rel="noopener noreferrer" class="text-lg font-bold text-emerald-400 hover:underline">055 973 81 07</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider block">İş Saatları</span>
+                            <span class="text-base font-semibold text-white">09:00 - 03:00 (Hər gün)</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider block">Məkan</span>
+                            <span class="text-base font-semibold text-white">Relax Massage & Spa at Parkway Inn</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-gray-700/50 space-y-3">
+                        <a href="https://www.google.com/maps/place/Relax+Massage+%26+Spa+at+Parkway+Inn/@40.3820227,49.8270984,17z/data=!4m6!3m5!1s0x40307ddec40f083b:0x55fce85b68358c0d!8m2!3d40.3819689!4d49.8294267!16s%2Fg%2F11p19t7xq1" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-gold-500 hover:bg-gold-400 text-dark-900 font-bold py-3 rounded-xl text-sm transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-map-pin"></i> Google Maps-də Açın
+                        </a>
+                        <a href="https://wa.me/994559738107" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-sm transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp ilə Yazın
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed Container -->
+                <div class="bg-dark-800 border border-gold-500/20 rounded-2xl overflow-hidden h-[380px] sm:h-[450px] lg:col-span-2 relative shadow-2xl w-full">
+                    <iframe 
+                        title="Relax Massage & Spa at Parkway Inn Location" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.380720478065!2d49.8270984!3d40.3820227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307ddec40f083b%3A0x55fce85b68358c0d!2sRelax%20Massage%20%26%20Spa%20at%20Parkway%20Inn!5e0!3m2!1saz!2saz!4v1700000000000!5m2!1saz!2saz" 
+                        class="w-full h-full border-0 filter grayscale invert contrast-125 opacity-80 hover:opacity-100 hover:grayscale-0 transition duration-500"
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    
+                    <div class="absolute bottom-4 left-4 bg-dark-900/90 border border-gold-500/40 p-4 rounded-xl backdrop-blur-md hidden sm:flex items-center gap-3">
+                        <img src="images/logo.png" alt="Relax Spa Logo" class="w-10 h-10 object-contain">
+                        <div>
+                            <h4 class="text-xs font-bold text-white">Relax Massage & Spa</h4>
+                            <p class="text-[10px] text-gold-400">Parkway Inn, Bakı</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark-900 border-t border-gold-500/20 pt-16 pb-12 text-gray-400 w-full overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4 md:col-span-2">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-full overflow-hidden border border-gold-500/40 p-1 bg-dark-800 flex-shrink-0">
+                            <img src="images/logo.png" alt="Relax Spa Logo" class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <span class="font-serif text-2xl font-bold text-gold-400">RELAX</span>
+                            <span class="block text-xs text-gray-400 uppercase tracking-widest">Massage & Spa at Parkway Inn</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400 max-w-md font-light leading-relaxed">
+                        Parkway Inn otelində yerləşən eksklüziv masaj və spa mərkəzimizdə bədəninizə və ruhunuza xüsusi lüks qulluq göstərin. Hovuz, hamam, sauna və peşəkar masaj xidmətləri ilə 09:00 - 03:00 xidmətinizdəyik.
+                    </p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="font-serif text-lg font-semibold text-white mb-4 border-b border-gold-500/20 pb-2 inline-block">Səhifələr</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#hero" class="hover:text-gold-400 transition">Ana Səhifə</a></li>
+                        <li><a href="#haqqimizda" class="hover:text-gold-400 transition">Haqqımızda</a></li>
+                        <li><a href="#xidmetler" class="hover:text-gold-400 transition">Xidmətlərimiz</a></li>
+                        <li><a href="#serait" class="hover:text-gold-400 transition">Şəraitimiz</a></li>
+                        <li><a href="#qalereya" class="hover:text-gold-400 transition">Qalereya</a></li>
+                        <li><a href="#elaqe" class="hover:text-gold-400 transition">Əlaqə & Xəritə</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Info -->
+                <div>
+                    <h4 class="font-serif text-lg font-semibold text-white mb-4 border-b border-gold-500/20 pb-2 inline-block">Əlaqə</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-gold-400 text-xs"></i>
+                            <a href="tel:+994559738107" class="hover:text-gold-400 transition">055 973 81 07</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+                            <a href="https://wa.me/994559738107" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition">055 973 81 07 (WhatsApp)</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-regular fa-clock text-gold-400 text-xs"></i>
+                            <span>09:00 - 03:00 (Hər gün)</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-gold-400 text-xs"></i>
+                            <span>Parkway Inn, Bakı</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+                <p>&copy; 2026 Relax Massage & Spa at Parkway Inn. Bütün hüquqlar qorunur.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL FOR GALLERY IMAGES -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden flex flex-col justify-between p-4 sm:p-8">
+        <div class="flex justify-between items-center z-10">
+            <span id="lightbox-caption" class="text-gold-400 font-serif text-base sm:text-lg font-bold"></span>
+            <button id="lightbox-close" class="text-gray-400 hover:text-white text-3xl focus:outline-none p-2">&times;</button>
+        </div>
+        <div class="flex-1 flex items-center justify-center my-4 overflow-hidden relative">
+            <img id="lightbox-img" src="" alt="Spa Real Image" class="max-h-[85vh] max-w-full object-contain rounded-xl border border-gold-500/30 shadow-2xl">
+        </div>
+        <div class="text-center text-gray-400 text-xs z-10">
+            <span>Relax Massage & Spa at Parkway Inn</span>
+        </div>
+    </div>
+
+    <!-- FLOATING ACTION BUTTONS (MOBILE & DESKTOP) -->
+    <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
+        <!-- Floating Phone Button -->
+        <a href="tel:+994559738107" aria-label="Zəng Edin" class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gold-500 hover:bg-gold-400 text-dark-900 flex items-center justify-center text-lg sm:text-xl shadow-2xl shadow-gold-500/50 hover:scale-110 transition duration-300">
+            <i class="fa-solid fa-phone animate-pulse"></i>
+        </a>
+
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/994559738107" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center text-xl sm:text-2xl shadow-2xl shadow-emerald-500/50 hover:scale-110 transition duration-300">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
