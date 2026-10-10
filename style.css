@@ -28,6 +28,61 @@ html, body {
     }
 }
 
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slowZoom {
+    0% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes pulseGold {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.25), 0 0 0 1px rgba(212, 175, 55, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 45px rgba(212, 175, 55, 0.6), 0 0 0 2px rgba(212, 175, 55, 0.7);
+    }
+}
+
+@keyframes floatSlow {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slow-zoom {
+    animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+.animate-pulse-gold {
+    animation: pulseGold 3s infinite ease-in-out;
+}
+
+.animate-float {
+    animation: floatSlow 4s infinite ease-in-out;
+}
+
 /* Scrollbar Customization */
 ::-webkit-scrollbar {
     width: 6px;
@@ -45,6 +100,13 @@ html, body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #D4AF37;
+}
+
+/* Glassmorphism Hero Card */
+.glass-panel {
+    background: rgba(18, 21, 27, 0.82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
 
 /* Subtle glowing hover effects on cards */

@@ -50,7 +50,7 @@
     </script>
     
     <!-- Custom Styles (with Cache-Buster) -->
-    <link rel="stylesheet" href="style.css?v=1.2">
+    <link rel="stylesheet" href="style.css?v=2.0">
 </head>
 <body class="bg-dark-900 text-gray-200 font-sans antialiased overflow-x-hidden max-w-full selection:bg-gold-500 selection:text-dark-900">
 
@@ -65,7 +65,7 @@
                         <img src="images/logo.png" alt="Relax Massage & Spa Logo" class="w-full h-full object-contain">
                     </div>
                     <div class="flex flex-col justify-center">
-                        <span class="font-serif text-base sm:text-2xl font-bold text-gold-400 group-hover:text-gold-300 transition leading-tight">Relax Massage & Spa</span>
+                        <span class="font-serif text-base sm:text-2xl font-bold text-gold-400 group-hover:text-gold-300 transition leading-snug">Relax Massage & Spa</span>
                         <span class="text-[10px] sm:text-xs text-gray-400 tracking-widest font-medium uppercase">at Parkway Inn</span>
                     </div>
                 </a>
@@ -119,71 +119,86 @@
         </div>
     </header>
 
-    <!-- HERO SECTION WITH REFINED CENTRALLY-BALANCED LUXURY DESIGN -->
-    <section id="hero" class="relative min-h-[88vh] flex items-center justify-center overflow-hidden py-14 sm:py-20 bg-dark-900 w-full">
-        <!-- Ambient Glow Backdrops -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <!-- STUNNING ANIMATED HERO SECTION WITH REAL PREMIUM SPA BACKDROP -->
+    <section id="hero" class="relative min-h-[92vh] flex items-center justify-center overflow-hidden py-16 sm:py-24 bg-dark-900 w-full">
+        
+        <!-- Animated Background Image Showcase -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="images/Screenshot 2026-10-10 094249.png" alt="Relax Spa Premium Environment" class="w-full h-full object-cover animate-slow-zoom opacity-40 filter brightness-75">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/80 to-dark-900/90"></div>
+            <div class="absolute inset-0 bg-hero-pattern opacity-50"></div>
+        </div>
 
+        <!-- Hero Main Content -->
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
-            <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+            
+            <!-- Glassmorphism Main Card -->
+            <div class="glass-panel border border-gold-500/30 rounded-3xl p-6 sm:p-12 shadow-2xl max-w-4xl mx-auto text-center relative animate-fade-in-up">
                 
-                <!-- Central Emblem Header -->
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border border-gold-500/40 p-2.5 bg-dark-800/80 backdrop-blur-md shadow-2xl mb-6 flex items-center justify-center">
-                    <img src="images/logo.png" alt="Relax Spa Emblem" class="w-full h-full object-contain">
+                <!-- Glowing Emblem Logo -->
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-gold-400 bg-dark-900/90 p-3 shadow-2xl mx-auto mb-6 flex items-center justify-center animate-pulse-gold relative group">
+                    <img src="images/logo.png" alt="Relax Spa Emblem" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
                 </div>
 
+                <!-- Main Title -->
                 <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
                     Ruhunuz Və Bədəniniz Üçün <br>
                     <span class="gold-gradient-text">Unudulmaz Spa & Masaj Lüksü</span>
                 </h1>
 
+                <!-- Subtitle -->
                 <p class="text-gray-300 text-sm sm:text-lg font-light leading-relaxed mb-8 max-w-2xl mx-auto">
                     Parkway Inn otelinin sakit və nəfis mühitində qapalı hovuz, Fin saunası, əsaslı Türk hamamı və peşəkar masaj seansları ilə tam yenilənin.
                 </p>
 
-                <!-- Feature pills -->
+                <!-- Feature Pills -->
                 <div class="flex flex-wrap justify-center items-center gap-3 mb-10">
-                    <div class="bg-dark-800/90 border border-gold-500/30 px-4 py-2 rounded-full flex items-center gap-2.5 text-xs sm:text-sm text-gray-200 shadow-md">
+                    <div class="bg-dark-900/90 border border-gold-500/40 px-4 py-2 rounded-full flex items-center gap-2.5 text-xs sm:text-sm text-gray-200 shadow-md">
                         <i class="fa-solid fa-water-ladder text-gold-400"></i>
-                        <span>Hovuz, Hamam, Sauna & Masaj</span>
+                        <span>Qapalı Hovuz & Türk Hamamı</span>
                     </div>
-                    <div class="bg-dark-800/90 border border-gold-500/30 px-4 py-2 rounded-full flex items-center gap-2.5 text-xs sm:text-sm text-gray-200 shadow-md">
+                    <div class="bg-dark-900/90 border border-gold-500/40 px-4 py-2 rounded-full flex items-center gap-2.5 text-xs sm:text-sm text-gray-200 shadow-md">
+                        <i class="fa-solid fa-hot-tub-person text-gold-400"></i>
+                        <span>Fin Saunası & Peşəkar Masaj</span>
+                    </div>
+                    <div class="bg-dark-900/90 border border-gold-500/40 px-4 py-2 rounded-full flex items-center gap-2.5 text-xs sm:text-sm text-gray-200 shadow-md">
                         <i class="fa-solid fa-hotel text-gold-400"></i>
                         <span>Parkway Inn Baku</span>
                     </div>
                 </div>
 
-                <!-- Action Buttons -->
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full sm:w-auto mb-14">
-                    <a href="https://wa.me/994559738107" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-3.5 rounded-full text-sm sm:text-base tracking-wider transition duration-300 shadow-xl shadow-emerald-950/50 flex items-center justify-center gap-3 group">
+                <!-- Action CTA Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full sm:w-auto mb-10">
+                    <a href="https://wa.me/994559738107" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-full text-sm sm:text-base tracking-wider transition duration-300 shadow-xl shadow-emerald-950/60 flex items-center justify-center gap-3 group">
                         <i class="fa-brands fa-whatsapp text-xl group-hover:scale-110 transition"></i> WhatsApp ilə Yazın
                     </a>
-                    <a href="tel:+994559738107" class="w-full sm:w-auto bg-gold-gradient hover:opacity-90 text-dark-900 font-bold px-8 py-3.5 rounded-full text-sm sm:text-base tracking-wider transition duration-300 shadow-xl shadow-gold-500/20 flex items-center justify-center gap-3">
+                    <a href="tel:+994559738107" class="w-full sm:w-auto bg-gold-gradient hover:opacity-90 text-dark-900 font-bold px-8 py-4 rounded-full text-sm sm:text-base tracking-wider transition duration-300 shadow-xl shadow-gold-500/30 flex items-center justify-center gap-3">
                         <i class="fa-solid fa-phone text-lg"></i> Zəng Edin: 055 973 81 07
                     </a>
                 </div>
 
-                <!-- Centered Photo Showcase Cards Grid -->
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 w-full max-w-4xl mx-auto">
-                    <div class="rounded-2xl overflow-hidden border border-gold-500/30 shadow-2xl h-36 sm:h-48 group relative">
+                <!-- Interactive Floating Photo Thumbnails -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full pt-4 border-t border-gold-500/20">
+                    <div class="rounded-xl overflow-hidden border border-gold-500/30 shadow-xl h-24 sm:h-28 group relative animate-float">
                         <img src="images/Screenshot 2026-10-10 094217.png" alt="Qapalı Hovuz Zalı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <span class="absolute bottom-2 left-2 right-2 text-[10px] sm:text-xs text-center font-serif text-white bg-dark-900/80 py-1 rounded-lg backdrop-blur-sm">Hovuz Zalı</span>
+                        <span class="absolute inset-x-0 bottom-0 text-[10px] text-center font-serif text-white bg-dark-900/80 py-0.5 backdrop-blur-xs">Qapalı Hovuz</span>
                     </div>
-                    <div class="rounded-2xl overflow-hidden border border-gold-500/30 shadow-2xl h-36 sm:h-48 group relative">
+                    <div class="rounded-xl overflow-hidden border border-gold-500/30 shadow-xl h-24 sm:h-28 group relative animate-float" style="animation-delay: 0.5s;">
                         <img src="images/Screenshot 2026-10-10 094122.png" alt="Türk Hamamı Göbəktazı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <span class="absolute bottom-2 left-2 right-2 text-[10px] sm:text-xs text-center font-serif text-white bg-dark-900/80 py-1 rounded-lg backdrop-blur-sm">Türk Hamamı</span>
+                        <span class="absolute inset-x-0 bottom-0 text-[10px] text-center font-serif text-white bg-dark-900/80 py-0.5 backdrop-blur-xs">Türk Hamamı</span>
                     </div>
-                    <div class="rounded-2xl overflow-hidden border border-gold-500/30 shadow-2xl h-36 sm:h-48 group relative">
+                    <div class="rounded-xl overflow-hidden border border-gold-500/30 shadow-xl h-24 sm:h-28 group relative animate-float" style="animation-delay: 1s;">
                         <img src="images/Screenshot 2026-10-10 094115.png" alt="Fin Sauna Otağı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <span class="absolute bottom-2 left-2 right-2 text-[10px] sm:text-xs text-center font-serif text-white bg-dark-900/80 py-1 rounded-lg backdrop-blur-sm">Fin Saunası</span>
+                        <span class="absolute inset-x-0 bottom-0 text-[10px] text-center font-serif text-white bg-dark-900/80 py-0.5 backdrop-blur-xs">Fin Saunası</span>
                     </div>
-                    <div class="rounded-2xl overflow-hidden border border-gold-500/30 shadow-2xl h-36 sm:h-48 group relative">
+                    <div class="rounded-xl overflow-hidden border border-gold-500/30 shadow-xl h-24 sm:h-28 group relative animate-float" style="animation-delay: 1.5s;">
                         <img src="images/Screenshot 2026-10-10 094249.png" alt="Cütlük Masaj Otağı" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <span class="absolute bottom-2 left-2 right-2 text-[10px] sm:text-xs text-center font-serif text-white bg-dark-900/80 py-1 rounded-lg backdrop-blur-sm">VIP Masaj Otağı</span>
+                        <span class="absolute inset-x-0 bottom-0 text-[10px] text-center font-serif text-white bg-dark-900/80 py-0.5 backdrop-blur-xs">VIP Spa Otağı</span>
                     </div>
                 </div>
 
             </div>
+
         </div>
     </section>
 
@@ -861,6 +876,6 @@
     </div>
 
     <!-- JavaScript (with Cache-Buster) -->
-    <script src="script.js?v=1.2"></script>
+    <script src="script.js?v=2.0"></script>
 </body>
 </html>
